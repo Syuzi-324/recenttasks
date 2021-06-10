@@ -6,7 +6,7 @@ let arr = [7, 8, 9];
 function stack(arr, action, elem){
 	
 	if(action == 'get') {
-		arr.pop();
+		console.log(arr.pop());
 	}
    if(action == 'set') {
    		arr.push(elem);

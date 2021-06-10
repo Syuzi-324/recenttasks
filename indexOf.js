@@ -7,6 +7,7 @@ function indexOf(arr,elem) {
 		}
 
 	}
+	return -1;
 }
 
 console.log(indexOf(arr,44));

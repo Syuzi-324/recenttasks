@@ -1,31 +1,17 @@
 
 
 // 8.Գտնել զանգվածի 2-րդ մեծագույն արժեքի ինդեքսը
-let Arr=[1054,2500000,47,6590,3,2,84300];
-
-function findmax(arr){
-	let tmp;
-	let max =-1/0;
-	for(var i=0;i<arr.length;i++){
-			if(max<arr[i]){
-				max=arr[i];
-			} else { i++;}
-
-	}
-	
-	return arr.indexOf(max);
-	
-}
+let arr=[105400,2500,47,6,3,2,843];
 
 
+let i = arr.indexOf(Math.max(...arr));
 
- function del(arr){
+arr[i] = 0;
 
- 	delete arr[findmax(arr)];
- 	console.log(arr);
- 	return findmax(arr)
- 	
- }
+console.log(arr)
+
+let k = arr.indexOf(Math.max(...arr));
+
+console.log (k);
 
 
-console.log(del(Arr));
